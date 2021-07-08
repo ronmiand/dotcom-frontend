@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  const data = {
+    title:  'Inicio - DotCom Money Exchange',
+  }
+  res.render('index', { data: data });
 });
 
 module.exports = router;
