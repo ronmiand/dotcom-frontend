@@ -2,15 +2,15 @@
 <main>
     <div class="login">
         <div class="col-lg-7">
-            <form>
+            <form method="GET" action="http://localhost:3000/api/v1/login">
                 <h4 class="fw-bold">Identificate</h4>
                 <div class="form-group">
                     <label for="correo">Correo</label>
-                    <input type="email" class="form-control form-control-sm" id="correo">
+                    <input type="email" class="form-control form-control-sm" id="correo" name="user">
                 </div>
                 <div class="form-group">
                     <label for="contrasena">Contraseña</label>
-                    <input type="password" class="form-control form-control-sm" id="contrasena">
+                    <input type="password" class="form-control form-control-sm" id="contrasena" name="password">
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-primary btn-dark rounded-pill">Ingresar
