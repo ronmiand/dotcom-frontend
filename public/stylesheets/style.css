@@ -19,7 +19,7 @@ header{
  color: #fff;
 font-size: 40px;
 }
-.logo img{
+.logo img {
   height: 97px;
   width:auto;
 }
@@ -30,15 +30,18 @@ font-size: 40px;
   height: 30px;
   width:auto;
 }
-.btn {
+.btn, .form-control {
   font-family: 'Roboto', sans-serif !important;
+  font-weight: 700;
 }
 nav button {
   border-radius: 20px !important;
   margin: 5px;
 
 }
-
+.nav-link {
+ color: #06AFE4;
+}
 .banner {
 
   padding: 5% 5%;
@@ -58,6 +61,13 @@ nav button {
 }
 .calculator .form-control {
   margin: 6px auto;
+  border-radius: 6px;
+  border: 1px solid #04150E;
+}
+.form-control-sm{
+  margin: 6px auto !important;
+  border: 1px solid #04150E;
+  border-radius: 6px;
 }
 .cambio {
   background-color: #B6E5D9;
@@ -192,17 +202,26 @@ footer img {
   float: left;
 }
 .login{
-  background: url(../images/wide-derecha.png), url(../images/bk-white.png);
-  background-position: right bottom, left bottom;
+  background: url(../images/wide-derecha.png);
+  background-position: right center, left bottom;
   background-repeat: no-repeat, no-repeat;
-  height: 800px;
+ background-size: 36%;
   box-sizing: border-box;
   clear: both;
   padding: 5%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    color: #bcd1c6;
 }
 @media only screen and (max-width: 991px) {
   .login {
-      background: url(../images/bk-white.png);
+      background: none;
   }
 }
 
