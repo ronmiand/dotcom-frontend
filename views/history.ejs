@@ -1,2 +1,49 @@
 <%- include('templates/header'); -%>
+<main class="formulario-cambio">
+    <div class="paso-descripcion container text-center">
+        <h2 class="fw-bold">Historial de operaciones</h2>
+        <img src="/images/pig-1.svg" alt="Historial de operaciones" width="90" >
+    </div>
+    <div class="tabla-historial">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Número de
+                    operación
+                </th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Tipo de
+                    cambio
+                </th>
+                <th scope="col">Monto
+                    enviado
+                </th>
+                <th scope="col">Monto
+                    recibido
+                </th>
+                <th scope="col">Estado</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>04/07/2021</td>
+                <td>usd a soles</td>
+                <td>1</td>
+                <td>3.99</td>
+                <td>completada</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>01/07/2021</td>
+                <td>soles a dolares</td>
+                <td>3.99</td>
+                <td>1</td>
+                <td>completada</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</main>
 <%- include('templates/footer'); -%>
