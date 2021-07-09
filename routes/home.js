@@ -5,10 +5,11 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 
   console.log(req.session);
+  /*
   if (req.session === undefined || req.session == null) {
     res.redirect('/history');
   }
-  
+  */
   const data = {
     title: 'Inicio - DoctCom Money Exchange',
     user: {

@@ -2,15 +2,15 @@
 <main>
     <div class="login">
         <div class="col-lg-7">
-            <form method="GET" action="http://localhost:3000/api/v1/login" autocomplete="off">
+            <form method="post" action="/login" autocomplete="off">
                 <h4 class="fw-bold">Identifícate</h4>
                 <div class="form-group">
-                    <label for="correo">Correo</label>
-                    <input type="email" class="form-control form-control-sm" id="correo" name="user" autocomplete="false">
+                    <label for="user">Correo</label>
+                    <input type="email" class="form-control form-control-sm" id="user" name="user" autocomplete="false">
                 </div>
                 <div class="form-group">
-                    <label for="contrasena">Contraseña</label>
-                    <input type="password" class="form-control form-control-sm" id="contrasena" name="password" autocomplete="false">
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control form-control-sm" id="password" name="password" autocomplete="false">
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-primary btn-dark rounded-pill">Ingresar
@@ -21,9 +21,12 @@
                 <p>¿Aún no tienes una cuenta con nosotros?</p>
                 <a href="#" class="link-primary">!Registrate ahora!</a>
             </div>
-            <div class="alert alert-danger" role="alert">
-                Error - Vuelve a ingresar los datos
-            </div>
+            <% if (data.error) { %>
+                <div class="alert alert-danger" role="alert">
+                    Error - Vuelve a ingresar los datos
+                </div>
+             <%   } %>
+            
         </div>
     </div>
 </main>
